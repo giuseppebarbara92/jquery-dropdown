@@ -1,0 +1,136 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+font-family: 'Roboto', sans-serif;
+}
+
+header{
+  margin-top: 50px;
+  height: 60px;
+  width: 100%;
+
+}
+.container{
+  height: 100%;
+  width: 70%;
+  margin: 0 auto;
+}
+
+.header_left{
+  height: 100%;
+  width: 12%;
+  float: left;
+}
+
+.header_left img{
+  height: 45%;
+  margin-top: 15px;
+}
+
+.header_right{
+  height: 100%;
+  width: 88%;
+  float: left;
+}
+
+.header_right_lft{
+  height: 100%;
+  width: 20%;
+  float: left;
+}
+.header_right_lft a{
+  text-decoration: none;
+  color: rgb(160, 166, 173);
+  line-height: 60px;
+  margin-right: 10px;
+  font-size: 16px;
+  font-weight: 300;
+}
+
+.header_right_lft a:hover{
+  color: black;
+}
+
+
+.header_right_rgt{
+  height: 100%;
+  width: 80%;
+  float: left;
+}
+
+.btn_pink{
+  line-height: 60px;
+  float:right;
+}
+
+.btn_pink a{
+  padding: 13px 20px;
+  background-color: rgb(235, 0, 141);
+  color: white;
+  border-radius: 50px;
+  text-decoration: none;
+}
+
+.header_right_rgt .item{
+  line-height: 60px;
+  float: right;
+  padding: 0 20px;
+  position: relative;
+  cursor: pointer;
+}
+
+.header_right_rgt .item.open{
+}
+
+.header_right_rgt .item > a{
+  color: rgb(160, 166, 173);
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 300;
+}
+.header_right_rgt .item.open  a{
+  color: black;
+}
+
+.header_right_rgt .item:hover  a{
+  color: black;
+}
+
+.dropdown_menu{
+  display: none;
+  width: auto;
+  height: auto;
+  background: white;
+  box-shadow: 0px 2px 12px 6px rgba(0,0,0,0.04);
+  position: absolute;
+  left: 50%;
+  top: 60px;
+  transform: translateX(-50%);
+}
+
+
+.dropdown_menu.active{
+  display: block;
+}
+
+.dropdown_menu.active .dropdown_item > a{
+  color: rgb(160, 166, 173);
+  font-weight: 300;
+}
+
+
+.dropdown_menu .dropdown_item > a{
+  color: rgb(160, 166, 173);
+  text-decoration: none;
+  padding: 0 30px;
+}
+
+.dropdown_menu .dropdown_item:hover > a{
+  color: black;
+}
+
+.dropdown_menu .dropdown_item:hover{
+  background: rgba(243, 244, 245);
+  cursor: pointer;
+}
